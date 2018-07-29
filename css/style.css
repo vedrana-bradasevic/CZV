@@ -1,0 +1,371 @@
+        @font-face {
+            font-family: 'Muller Narrow';
+            src: url('../font/MullerNarrow-Light.woff2') format('woff2'), url('../font/MullerNarrow-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'Muller Narrow';
+            font-weight: 300;
+            font-style: normal;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        nav {
+            position: fixed;
+            /*  width: 1300px;*/
+            top: 100px;
+            width: 100%;
+        }
+        
+        header {
+            top: 0;
+            position: fixed;
+            /*  width: 1300px;*/
+            width: 100%;
+        }
+        
+        header div {
+            background: linear-gradient(to right, #1F1C18, #8E0E00);
+        }
+        
+        ul {
+            margin: 0;
+            background: #f3eaea;
+            display: flex;
+            padding-left: 0;
+        }
+        
+        ul li {
+            padding: 0 20px;
+        }
+        
+        ul li a {
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+        
+        li.list>a {
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .list {
+            display: inline-block;
+            padding: 20px;
+        }
+        
+        #dropdown {
+            position: relative;
+        }
+        
+        #dropdown-content {
+            padding: 0;
+        }
+        
+        #dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            margin-top: 20px;
+            left: 0;
+            height: 400px;
+            overflow-y: scroll;
+        }
+        
+        #dropdown-content li a {
+            width: 120px;
+            margin: 0 auto;
+            color: black;
+            padding: 10px 0px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        #dropdown-content li:hover a {
+            color: white;
+        }
+        
+        li#dropdown:hover ul#dropdown-content {
+            display: block;
+        }
+        
+        #main-ul li:hover {
+            background: #b71616;
+            color: white;
+        }
+        
+        .active {
+            color: white !important;
+            background: #b71616;
+        }
+        
+        .list:hover a {
+            color: white;
+        }
+        
+        .fas {
+            padding-left: 10px;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin-top: 150px;
+            /* Ово осигурава да се висина контејнера прилагођава висини боксова које садржи */
+        }
+        
+        aside {
+            flex: 0 0 200px;
+            height: 100%;
+        }
+        
+        section,
+        aside {
+            width: 100%;
+            /* Ово осигурава да се ширина ових елемената прилагођава тако да се попуни прозор по ширини */
+        }
+        
+        #content {
+            padding: 20px 20px;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        
+        #content h1 {
+            text-align: center;
+            padding: 0px 20px 20px 20px;
+            margin-left: 30px;
+            font-size: 2em;
+        }
+        
+        #sd-info p {
+            padding: 30px 100px;
+            text-align: justify;
+        }
+        
+        .left-img {
+            float: left;
+            padding: 10px 30px 10px 20px;
+        }
+        
+        .right-img {
+            float: right;
+            padding: 10px 30px 10px 30px;
+        }
+        
+        #history {
+            margin-top: 100px;
+        }
+        
+        #history p {
+            text-align: justify;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        
+        #history h3 {
+            padding: 20px 20px 0px 20px;
+        }
+        
+        #last-p {
+            margin-top: 50px;
+        }
+        
+        aside h4 {
+            background: #9c0505f7;
+            padding: 10px;
+            color: white;
+        }
+        
+        .sidebar-link-3 a:before {
+            border-top: 2px solid #a512121c;
+            border-left: 1px solid #a512121c;
+            content: "";
+            display: block;
+            width: 20%;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-link-3 a:after {
+            border-bottom: 2px solid #a512121c;
+            border-right: 1px solid #a512121c;
+            content: "";
+            display: block;
+            width: 20%;
+            height: 30px;
+            float: right;
+        }
+        
+        .sidebar-link-3 img {
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .sidebar-link-3 p {
+            text-align: center;
+        }
+        
+        .sidebar-link img {
+            margin-right: 10px;
+        }
+        
+        #first-link {
+            margin: 0 auto;
+        }
+        
+        #second-link {
+            background: #101086;
+            padding: 20px;
+            margin-bottom: 4px;
+            margin-right: 7px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        footer {
+            background: #f3eaea;
+            width: 100%;
+            bottom: 0;
+            margin-top: 100px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        footer li {
+            list-style-type: none;
+        }
+        
+        #footer-greet {
+            align-self: center;
+        }
+        
+        #social-media {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0px 20px 0px;
+        }
+        
+        footer a:hover {
+            color: #9c0505f7;
+        }
+        
+        footer h2,
+        h3 {
+            text-align: left;
+        }
+        
+        #info {
+            margin-left: 200px;
+            margin-right: 200px;
+            padding-bottom: 50px;
+        }
+        
+        #info::after {
+            border-bottom: 1px solid #a512121c;
+            content: "";
+            display: block;
+            padding-top: 10px;
+            clear: both;
+        }
+        
+        #info section {
+            display: inline-block;
+        }
+        
+        #info li {
+            display: block;
+            padding-bottom: 10px;
+        }
+        
+        #info ul {
+            -webkit-padding-start: 0px;
+        }
+        
+        #stadion {
+            margin-right: 100px;
+        }
+        
+        #adress {
+            float: right;
+        }
+        
+        #copyright {
+            float: right;
+            clear: both;
+        }
+        
+        img:hover {
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            /* For IE8 and earlier */
+            cursor: pointer;
+        }
+        /* Druga strana css */
+        
+        .fk {
+            padding-left: 40px;
+        }
+        
+        .fk:hover {
+            opacity: 1;
+        }
+        /* Овде убацити све стилске одреднице које override default set above for Tablets */
+        
+        @media only screen and (min-width: 600px) {
+            main {
+                flex-direction: row;
+            }
+            aside {
+                flex-direction: row;
+            }
+        }
+        
+        @media only screen and (max-width: 800px) {
+            footer article {
+                padding-left: 20px;
+            }
+            #footer-greet {
+                justify-self: center;
+            }
+            ul .social-media {
+                justify-content: center;
+            }
+            .social-media {
+                justify-content: center;
+            }
+        }
+        /* Овде убацити све стилске одреднице које override default set above for Tablets */
+        
+        @media only screen and (max-width: 1150px) {
+            #sd-info p {
+                padding: 20px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            #sd-info p {
+                padding: 20px;
+            }
+            .right-img {
+                padding: 0px;
+            }
+            footer {
+                margin-top: 0;
+                padding-top: 0;
+                display: flex;
+                flex-direction: column;
+            }
+        }
