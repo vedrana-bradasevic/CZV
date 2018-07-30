@@ -320,39 +320,9 @@
         .fk:hover {
             opacity: 1;
         }
-        /* Овде убацити све стилске одреднице које override default set above for Tablets */
         
-        @media only screen and (min-width: 600px) {
-            main {
-                flex-direction: row;
-            }
-            aside {
-                flex-direction: row;
-            }
-        }
-        
-        @media only screen and (max-width: 800px) {
-            footer article {
-                padding-left: 20px;
-            }
-            #footer-greet {
-                justify-self: center;
-            }
-            ul .social-media {
-                justify-content: center;
-            }
-            .social-media {
-                justify-content: center;
-            }
-        }
-        /* Овде убацити све стилске одреднице које override default set above for Tablets */
-        
-        @media only screen and (max-width: 1150px) {
-            #sd-info p {
-                padding: 20px;
-            }
-        }
-        
+   
+       
         @media only screen and (max-width: 600px) {
             #sd-info p {
                 padding: 20px;
@@ -370,3 +340,34 @@
             text-align: center;
             }
         }
+        @media only screen and (min-width: 600px) {
+            main {
+                flex-direction: row;
+            }
+            aside {
+                flex-direction: row;
+            }
+        }
+         
+        @media only screen and (max-width: 800px) {
+            footer article {
+                padding-left: 20px;
+            }
+            #footer-greet {
+                justify-self: center;
+            }
+            ul .social-media {
+                justify-content: center;
+            }
+            .social-media {
+                justify-content: center;
+            }
+        }
+      
+        
+        @media only screen and (max-width: 1150px) {
+            #sd-info p {
+                padding: 20px;
+            }
+        }
+        
